@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bakery Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <div class="cart">
+    <h2>My Bakery Cart</h2>
+    <ul class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+      <script>
+        // JavaScript code for adding items to the cart
+        var cartItems = [
+          { name: "Croissant", price: 2.5, image: "croissant.jpg" },
+          { name: "Cupcake", price: 3, image: "cupcake.jpg" },
+          { name: "Baguette", price: 4, image: "baguette.jpg" }
+        ];
+      
+        var cartList = document.querySelector(".cart-items");
+      
+        cartItems.forEach(function(item) {
+          var cartItem = document.createElement("li");
+          cartItem.classList.add("cart-item");
+      
+          var itemImage = document.createElement("img");
+          itemImage.src = item.image;
+          itemImage.alt = item.croissant;
+          itemImage.classList.add("item-image");
+          cartItem.appendChild(itemImage);
+      
+          var itemName = document.createElement("span");
+          itemName.textContent = item.cupcake;
+          itemName.classList.add("item-name");
+          cartItem.appendChild(itemName);
+      
+          var itemPrice = document.createElement("span");
+          itemPrice.textContent = "R" + item.price.toFixed(2);
+          cartItem.appendChild(itemPrice);
+      
+          cartList.appendChild(cartItem);
+        });
+      </script>
+      
+    </ul>
+    <div class="cart-total">
+      <strong>Total: R9.50</strong>
+    </div>
+    <button class="checkout-btn">Checkout</button>
+    <p><strong>Thank you for shopping with us!</strong></p>
+  </div>
+</body>
+</html>

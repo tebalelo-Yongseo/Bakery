@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bakery Order Tracking</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+   color: #f1f1f1;
+    /*margin: 0;
+    padding: 0;*/
+    
+
+    
+
+
+    background-image: url(bgk.png.jpg);
+    /*background-color: #555;*/
+    /*color: #fff;*/
+    padding: 10px;
+   
+    font-size: 12px;
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+table{
+    text-align: center; 
+    padding: 10px;
+}
+  </style>
+</head>
+<body>
+  <h1>Bakery Order Tracking</h1>
+
+  <!-- Order tracking form -->
+  <form>
+    <label for="orderNumber">Order Number:</label>
+    <input type="text" id="orderNumber" name="orderNumber" placeholder="Enter order number" required><br><br>
+
+    <label for="deliveryDate">Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+
+    <input type="submit" value="Track Order">
+  </form>
+
+  <!-- Delivery schedule section -->
+<h2>Delivery Schedule</h2>
+  <table>
+    <tr>
+      <th>Order Number</th>
+      <th>Delivery Date</th>
+    </tr>
+    <tr>
+      <td>#1001</td>
+      <td>2023-01-05</td>
+    </tr>
+    <tr>
+      <td>#1002</td>
+      <td>2023-01-06</td>
+    </tr>
+    <tr>
+        <td>#1003</td>
+        <td>2023-01-07</td>
+      </tr>
+  
+  </table>
+</body>
+</html>

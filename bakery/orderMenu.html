@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bakery Ordering Menu</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(bgk.png.jpg);
+    /*background-color: #555;*/
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bakery Ordering Menu</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Add to Cart</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <img src="croissant.jpg" alt="croissant" style="width:10%" onclick="myFunction(this);"></td>
+        <td>Croissant</td>
+        <td>R2.5</td><br><br>
+        <td><button>Add</button></td>
+      </tr>
+      <tr>
+        <td> <img src="cupcake.jpg" alt="cupcake" style="width:10%" onclick="myFunction(this);"></td>
+        <td>Cupcake</td>
+        <td>R3.00</td>
+        <td><button>Add</button></td>
+      </tr>
+      <tr>
+        <td> <img src="baguette.jpg" alt="baguette" style="width:10%" onclick="myFunction(this);"></td>
+        <td>Cupcake</td>
+        <td>R4.00</td>
+        <td><button>Add</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+

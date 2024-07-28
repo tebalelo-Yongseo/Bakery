@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bakery Inventory Management System</title>
+</head>
+<style>
+    body {
+  
+
+    
+
+
+    background-image: url(bgk.png.jpg);
+    /*background-color: #555;*/
+    /*color: #fff;*/
+    padding: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
+</style>
+
+<body>
+  <h1>Bakery Inventory Management System</h1>
+  
+  <form id="add-item-form">
+    <h2>Add Item to Inventory</h2>
+    <label for="item-name">Item Name:</label><br><br>
+    <input type="text" id="item-name" name="item-name" required><br><br>
+    <label for="quantity">Quantity:</label><br><br>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+    <input type="submit" value="Add Item">
+  </form>
+  <br><br>
+  <table id="inventory-table">
+    <caption>Inventory</caption>
+    <thead>
+      <tr>
+        <th>Item Name</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>croissant</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>CupCakes</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>baguette</td>
+        <td>20</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
